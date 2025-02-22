@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.container1 {
+    width: 75%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #b63000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button1 {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background:  #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ff6347;
+}
+
+h1 {
+    font-family: Apple Chancery, cursive;
+    word-spacing: 60px;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: Courier New, monospace;
+    margin-top: -88px;
+    color: rgb(246, 141, 137);
+    font-size: 40px;
+    transform: rotate(340deg);
+}
+
+h3 {
+    color: rgb(246, 141, 137);
+    margin-top: -16px;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: rgb(246, 141, 137);
+    margin-top: 25px;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+h5 {
+    color:#222;
+}
+
+p {
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+p1 {
+    font-size: 20px;
+    font-family: Courier New, monospace;
+}
+
+
+hr {
+    margin-bottom: 50px;
+    border-bottom: 2px solid #ccc;
+    width: 90%;
+}

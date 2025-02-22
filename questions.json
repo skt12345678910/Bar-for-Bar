@@ -1,0 +1,26 @@
+[
+    {
+        "lyric": "Too turnt, baby girl, you ___ me, yeah",
+        "question": "What word completes the lyric above?",
+        "answers": ["feel", "love", "broke", "know"],
+        "correct": "know"
+    },
+    {
+        "lyric": "Too turnt, baby girl, you ___ me, yeah",
+        "question": "What song is the lyric from?",
+        "answers": ["Marvin's Room", "Heartless", "Time Flies", "Trance"],
+        "correct": "Time Flies"
+    },
+    {
+        "lyric": "Too turnt, baby girl, you ___ me, yeah",
+        "question": "Who made the song?",
+        "answers": ["Travis Scott", "Jay-Z", "Drake", "Kanye"],
+        "correct": "Drake"
+    },
+    {
+        "lyric": "Too turnt, baby girl, you ___ me, yeah",
+        "question": "What album is the song from?",
+        "answers": ["Dark Lane Demo Tapes", "Scorpion", "Take Care", "Nothing Was The Same"],
+        "correct": "Dark Lane Demo Tapes"
+    }
+]
