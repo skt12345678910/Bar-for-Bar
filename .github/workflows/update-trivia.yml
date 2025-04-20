@@ -1,0 +1,29 @@
+name: Update Trivia Daily
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # Runs every day at 8:00 AM UTC = Midnight PST
+
+jobs:
+  update-trivia:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Fetch Trivia Data from Google Sheets
+        run: |
+          curl -o questions.json "https://docs.google.com/spreadsheets/d/e/2PACX-1vTyVu1etyews0_g-xZB3maofkFmk_SMCwt1vOUEqZpaMGZtF6ikUS9v6dhw9JA7aj2OWajIET0lr6Ij/pub?output=csv"
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add questions.json
+          git commit -m "Updated trivia questions" || echo "No changes to commit"
+          git push
+
+      - name: Trigger Netlify Deployment
+        run: |
+          curl -X POST -d '{}' "https://api.netlify.com/build_hooks/6805623996d913c0a172a6c0"
